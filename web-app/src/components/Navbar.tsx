@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='bg-red-700 border-b-1 border-white'>
+    <nav className='bg-yellow-500'>
       <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
         <div className='relative flex h-20 items-center justify-between'>
           <div className='absolute inset-y-0 left-0 flex items-center md:hidden'>
@@ -51,10 +51,10 @@ const Navbar = () => {
           <div className='flex flex-1 items-center justify-center md:items-stretch md:justify-start'>
             {/* <!-- Logo --> */}
             <Link className='flex flex-shrink-0 items-center' href='/'>
-              <Image className='h-10 w-auto' src={logo} alt='UGA arch logo' />
+
 
               <span className='hidden md:block text-white text-2xl font-bold ml-2'>
-                UGA Items
+                TuneTribe
               </span>
             </Link>
             {/* <!-- Desktop Menu Hidden below md screens --> */}
@@ -62,22 +62,11 @@ const Navbar = () => {
               <div className='flex space-x-2'>
                 <Link
                   href='/'
-                  className='text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'
+                  className='text-white hover:bg-yellow-700 hover:text-white rounded-md px-3 py-2'
                 >
-                  Home
+                  Leaderboard
                 </Link>
-                <Link
-                  href='/about'
-                  className='text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'
-                >
-                  About
-                </Link>
-                <a
-                  href='/contact'
-                  className='text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'
-                >
-                  Contact
-                </a>
+
               </div>
             </div>
           </div>
@@ -99,7 +88,7 @@ const Navbar = () => {
         { isLoggedIn && (
                 <div className='hidden md:block md:ml-6'>
                   <div className='flex items-center'>
-                    <button onClick = {handleLogin} className='flex items-center text-white bg-gray-400 hover:bg-gray-500 hover:text-white rounded-md px-3 py-2'>
+                    <button onClick = {handleLogin} className='flex items-center text-yellow-600 bg-white hover:bg-yellow-700 hover:text-white rounded-md px-3 py-2 my-4'>
                       <span>Logout</span>
                     </button>
                   </div>
@@ -130,9 +119,9 @@ const Navbar = () => {
           >
             Contact
           </a>
-          <button className='flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 my-4'>
-            <i className='fa-brands fa-google mr-2'></i>
-            <span>Login or Register</span>
+          <button className='flex items-center text-yellow-600 bg-white hover:bg-yellow-700 hover:text-white rounded-md px-3 py-2 my-4'>
+          <i className='fa-brands fa-google mr-2'></i>
+            <span>Login</span>
           </button>
         </div>
       </div>
