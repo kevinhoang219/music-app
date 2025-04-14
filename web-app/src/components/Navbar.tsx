@@ -2,6 +2,8 @@
 // This is from my Nextjs resources, Navbar_basic
 import {useState} from 'react';
 // import profileDefault from '@/assets/images/profile.png';
+import Link from 'next/link';
+
 
 const Navbar = () => {
   const [isLoggedIn,setIsLoggedIn ] = useState(false);
@@ -13,12 +15,21 @@ const Navbar = () => {
   return (
     <nav className="bg-orange-500 text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50">
       {/* App Name */}
-      <div className="text-lg font-bold">TuneTribe</div>
+      <Link href="/" className="text-lg font-bold">TuneTribe</Link>
 
       {/* Leaderboard Button */}
       <div className="flex gap-4 items-center">
-        <a className="hover:underline font-bold">Home</a>
+        <Link href="/leaderboard" className="hover:underline font-bold">Leaderboard</Link>
       </div>
+
+
+      {/* Profile Button */}
+      { isLoggedIn && (
+      <div className="flex gap-4 items-center">
+        <Link href="/profile" className="hover:underline font-bold">My Profile</Link>
+      </div>
+      )}
+
 
       { !isLoggedIn && (
         <div className='hidden md:block md:ml-6'>
