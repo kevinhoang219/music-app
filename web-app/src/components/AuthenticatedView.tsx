@@ -1,7 +1,9 @@
+import BioSection from '../components/BioSection';
+
 const AuthenticatedView = () => {
     return (
     <div className="min-h-screen bg-white flex flex-col">
-      <div className="max-w-5xl mx-auto mt-8 px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-5xl mx-auto mt-8 px-4 grid md:grid-cols-2 gap-8 items-center border border-gray-400 p-4 rounded">
         <img
             src="https://images.unsplash.com/photo-1741091750011-f0fb9b8400cc?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DY"
             alt="Profile"
@@ -10,23 +12,24 @@ const AuthenticatedView = () => {
 
         <div>
             <h1 className="text-2xl font-bold">Bob Jones</h1> 
-            <p className="text-gray-600">@bobiscool63</p>
-            <div className="mt-2 text-sm text-gray-700">
-                <p>School: UGA</p>
-                <p>Major: Film</p>
-                <p>Bio: always looking to expand my circle and find new friends to explore Athens with!</p>
-            </div>
-            <div className="mt-4 text-sm">
-                <span className="font-semibold">160 friends</span>
-                <span className="mx-2">|</span>
+            <span className="text-gray-600">@bobiscool63</span>
+            <span> has listened to... </span>
+            <div className="mt-1">
+                <span className="font-semibold">175 songs</span>
+                <span className="font-semibold"> & </span>
                 <span className="font-semibold">50 artists</span>
+                <span> in the past 30 days</span>
             </div>
-            <button className="mt-4 bg-orange-500 text-white hover:bg-orange-300 hover:text-white px-4 py-2 rounded">Follow</button>
-            <div className="mt-4 text-sm text-gray-700">
+            <div className="mt-4 text-m text-black">
+                <BioSection/>
+            </div>
+            {/*
+            <div className="mt-4 text-sm text-black">
                 <p className="font-semibold">Public notes:</p>
                 <p>@nancyscooler238 - hey bob</p>
                 <p>@liv258 - i love beyonce too!</p>
             </div>
+            */}
         </div>
       </div>
 
