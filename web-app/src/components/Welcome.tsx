@@ -8,6 +8,11 @@ import Pic3 from '../assets/girlListening.jpg';
 const Welcome = () => { 
     
     return (
+        <div>
+            <h1 className='p-10 text-4xl font-bold text-yellow-500'>TuneTribe </h1>
+            <p className='text-left indent-18'>Have fun connecting over music with your friends and view your favorite artists, genres, and songs!</p>
+            <p> add button to sign up</p>
+            <h1 className='p-10 text-4xl font-bold text-yellow-500'>Features: </h1>
         <div className="min-h-full flex items-center justify-center">
             <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-md max-w-md w-full text-center m-4">
                 <Image src={Pic1} alt="records and headphones" className='w-max justify-self-center p-5'/>
@@ -32,6 +37,7 @@ const Welcome = () => {
             <p className='text-left'>Create new playlists based on your unique tastes and share them with others</p>
             </div>
             </div>
+    </div>
     </div>
     )};
 export default Welcome;
