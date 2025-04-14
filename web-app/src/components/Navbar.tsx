@@ -76,8 +76,8 @@ const Navbar = () => {
           !isLoggedIn && (
                 <div className='hidden md:block md:ml-6'>
                   <div className='flex items-center'>
-                    <button onClick = {handleLogin} className='flex items-center text-white bg-gray-400 hover:bg-gray-500 hover:text-white rounded-md px-3 py-2'>
-                      <span>Login | Register</span>
+                    <button onClick = {handleLogin} className='flex items-center text-yellow-600 bg-white hover:bg-yellow-700 hover:text-white rounded-md px-3 py-2 my-4'>
+                      <span>Login</span>
                     </button>
                   </div>
                 </div>
