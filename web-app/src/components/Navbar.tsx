@@ -3,13 +3,22 @@
 import {useState} from 'react';
 // import profileDefault from '@/assets/images/profile.png';
 import Link from 'next/link';
-
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
   const [isLoggedIn,setIsLoggedIn ] = useState(false);
+  const router = useRouter();
 
   const handleLogin = () => {
-    setIsLoggedIn(prev => !prev);
+    setIsLoggedIn(prev => {
+      const newState = !prev;
+
+      if (!newState) {
+        router.push('/'); // redirect to welcome
+      }
+      
+      return newState;
+    });
   }
 
   return (
