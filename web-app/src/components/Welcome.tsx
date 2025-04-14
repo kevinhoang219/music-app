@@ -11,7 +11,7 @@ const Welcome = () => {
         <div>
             <h1 className='p-10 text-4xl font-bold text-orange-500'>TuneTribe </h1>
             <p className='text-left indent-18'>Have fun connecting over music with your friends and view your favorite artists, genres, and songs!</p>
-            <button className='flex items-center text-white bg-orange-500 hover:bg-orange-300 hover:text-white rounded-md px-3 py-2 my-4'>
+            <button className='flex items-center text-white bg-orange-500 hover:bg-orange-300 hover:text-white rounded-md px-3 py-2 my-4 m-18'>
                       <span>Sign Up</span>
                     </button>
             <h1 className='p-10 text-4xl font-bold text-orange-500'>Features: </h1>
