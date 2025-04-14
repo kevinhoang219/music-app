@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='bg-yellow-500'>
+    <nav className='bg-orange-500'>
       <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
         <div className='relative flex h-20 items-center justify-between'>
           <div className='absolute inset-y-0 left-0 flex items-center md:hidden'>
@@ -62,7 +62,7 @@ const Navbar = () => {
               <div className='flex space-x-2'>
                 <Link
                   href='/'
-                  className='text-white hover:bg-yellow-700 hover:text-white rounded-md px-3 py-2'
+                  className='text-white hover:bg-orange-300 hover:text-white rounded-md px-3 py-2'
                 >
                   Leaderboard
                 </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
           !isLoggedIn && (
                 <div className='hidden md:block md:ml-6'>
                   <div className='flex items-center'>
-                    <button onClick = {handleLogin} className='flex items-center text-yellow-600 bg-white hover:bg-yellow-700 hover:text-white rounded-md px-3 py-2 my-4'>
+                    <button onClick = {handleLogin} className='flex items-center text-orange-500 bg-white hover:bg-orange-300 hover:text-white rounded-md px-3 py-2 my-4'>
                       <span>Login</span>
                     </button>
                   </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
         { isLoggedIn && (
                 <div className='hidden md:block md:ml-6'>
                   <div className='flex items-center'>
-                    <button onClick = {handleLogin} className='flex items-center text-yellow-600 bg-white hover:bg-yellow-700 hover:text-white rounded-md px-3 py-2 my-4'>
+                    <button onClick = {handleLogin} className='flex items-center text-orange-500 bg-white hover:bg-orange-300 hover:text-white rounded-md px-3 py-2 my-4'>
                       <span>Logout</span>
                     </button>
                   </div>
