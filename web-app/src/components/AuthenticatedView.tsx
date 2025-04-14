@@ -3,7 +3,7 @@ import BioSection from '../components/BioSection';
 const AuthenticatedView = () => {
     return (
     <div className="min-h-screen bg-white flex flex-col">
-      <div className="max-w-5xl mx-auto mt-8 px-4 grid md:grid-cols-2 gap-8 items-center border border-gray-400 p-4 rounded">
+      <div className="max-w-5xl mx-auto mt-8 px-4 grid md:grid-cols-2 gap-8 items-center border border-orange-500 p-4 rounded border-3">
         <img
             src="https://images.unsplash.com/photo-1741091750011-f0fb9b8400cc?q=80&w=2572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DY"
             alt="Profile"
