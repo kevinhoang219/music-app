@@ -24,17 +24,18 @@ const Welcome = () => {
                 Sign Up
               </button>
             </div>
-            </div>
-            <h1 className='flex items-center justify-center mt-10 text-5xl font-bold text-orange-500'>Features</h1>
+        </div>
+        <div className="border-t-4 border-orange-500 my-12 w-3/4 mx-auto"></div>
+        <h1 className='flex items-center justify-center mt-10 mb-4 text-5xl font-bold text-orange-500'>Features</h1>
         <div className="min-h-full flex items-center justify-center">
-            <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-md max-w-md w-full text-center m-4">
+            <div className="border border-gray-400 shadow bg-white bg-opacity-80 p-8 rounded-lg shadow-md max-w-md w-full text-center m-4">
                 <Image src={Pic1} alt="records and headphones" className='w-max justify-self-center p-5'/>
             <h1 className="text-xl font-bold text-gray-800 text-left">Leaderboard</h1>
             <div className="mt-12">
                 <p className='text-left'>See how your listening habits compare to your fellow users</p>
             </div>
             </div>
-            <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-md max-w-md w-full text-center m-4">
+            <div className="border border-gray-400 shadow bg-white bg-opacity-80 p-8 rounded-lg shadow-md max-w-md w-full text-center m-4">
             <Image src={Pic2} alt="coffee cup" className='w-max justify-self-center p-5'/>
             <h1 className="text-xl font-bold text-gray-800 text-left">Connect with Friends</h1>
             <div className="mt-12">
@@ -42,7 +43,7 @@ const Welcome = () => {
             </div>
 
             </div>
-            <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-md max-w-md w-full text-center m-4">
+            <div className="border border-gray-400 shadow bg-white bg-opacity-80 p-8 rounded-lg shadow-md max-w-md w-full text-center m-4">
             <Image src={Pic3} alt="girl listening to music" className='w-max justify-self-center p-5'/>
             <h1 className="text-xl font-bold text-gray-800 text-left">Make playlists</h1>
             <div className="mt-12">

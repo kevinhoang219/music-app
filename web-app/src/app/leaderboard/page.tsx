@@ -3,7 +3,7 @@ import UnauthenticatedView from '@/components/UnauthenticatedView';
 
 const About = () => {
     return (
-        <Content>
+    <Content>
     <UnauthenticatedView />
     </Content>
     )
