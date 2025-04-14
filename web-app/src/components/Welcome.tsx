@@ -25,7 +25,7 @@ const Welcome = () => {
               </button>
             </div>
             </div>
-            <h1 className='mt-10 text-4xl font-bold text-orange-500'>Features: </h1>
+            <h1 className='flex items-center justify-center mt-10 text-5xl font-bold text-orange-500'>Features</h1>
         <div className="min-h-full flex items-center justify-center">
             <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-md max-w-md w-full text-center m-4">
                 <Image src={Pic1} alt="records and headphones" className='w-max justify-self-center p-5'/>

@@ -4,7 +4,7 @@ import { useState } from 'react';
 const BioSection = () => {
     const [bio, setBio] = useState("No bio");
     const [isEditing, setIsEditing] = useState(false);
-    const [newBio, setNewBio] = useState(bio);
+    const [newBio, setNewBio] = useState("");
 
     const handleEdit = () => {
         setIsEditing(true);
@@ -22,7 +22,7 @@ const BioSection = () => {
 
     return (
         <div>
-            <p>{bio || "No bio"}</p>
+            <p>{bio}</p>
 
             {isEditing ? (
                 <div>
